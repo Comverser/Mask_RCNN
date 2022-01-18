@@ -8,10 +8,8 @@ python3 setup.py install
 ```
 jupyter lab 
 ```bash
-conda install -c conda-forge jupyterlab
-jupyter server --generate-config
-jupyter server --generate-config
-conda install -c conda-forge nb_conda_kernels
+pip install jupyterlab
+jupyter notebook password
 ```
 ## requirements
 hardware compatible to 
