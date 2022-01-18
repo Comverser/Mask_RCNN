@@ -2,9 +2,8 @@
 ```bash
 git clone https://github.com/Comverser/Mask_RCNN.git
 cd Mask_RCNN
-conda create --n maskrcnn --file gnlabs/working-gpu.txt
+conda create -n maskrcnn --file gnlabs/working-gpu.txt
 conda activate maskrcnn
-conda install -c anaconda tensorflow-gpu=1.14.0
 python3 setup.py install
 ```
 jupyter lab 
