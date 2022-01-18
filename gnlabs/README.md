@@ -13,6 +13,10 @@ jupyter server --generate-config
 jupyter server --generate-config
 conda install -c conda-forge nb_conda_kernels
 ```
+## requirements
+hardware compatible to 
+- cudnn 7.6.4
+- cuda 10.1_0.tar.bz2
 
 # demo
 ```bash
