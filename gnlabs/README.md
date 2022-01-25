@@ -1,9 +1,12 @@
 # install
 ```bash
-git clone https://github.com/Comverser/Mask_RCNN.git
-cd Mask_RCNN
+# Create a conda environment
 conda create -n maskrcnn --file gnlabs/working-gpu.txt
 conda activate maskrcnn
+
+# Install Mask RCNN
+git clone https://github.com/Comverser/Mask_RCNN.git
+cd Mask_RCNN
 python3 setup.py install
 ```
 jupyter lab 
