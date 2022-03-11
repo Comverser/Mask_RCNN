@@ -179,7 +179,7 @@ class ParkDataset(utils.Dataset):
 
                 a_img = a.split('/')
                 file_name = f'{a_img[-1][:-5]}.jpg'
-                image_path = os.path.join(data_dir,file_name)
+                image_path = os.path.join(data_dir,a_img[-5],a_img[-4],a_img[-3],"Camera",file_name)
                 
                 if os.path.exists(image_path):
                     try:
@@ -188,15 +188,15 @@ class ParkDataset(utils.Dataset):
 
                         self.add_image(
                             "bbox",
-                            image_id=file_name,  # use file name as a unique image id
+                            image_id=f"{a_img[-4]}/{a_img[-3]}_b/{file_name}",  # use file name as a unique image id
                             path=image_path,
                             width=width, height=height,
                             bboxs=bboxs,
                             num_ids=num_ids)
                         bbox_file_list.append(image_path)
 
-                        if len(bbox_file_list)%1000==0:
-                          print(len(bbox_file_list))
+#                         if len(bbox_file_list)%1000==0:
+#                           print(len(bbox_file_list))
                     except :
     #                     print(f'{image_path} 불러오기 실패')
                         pass
