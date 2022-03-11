@@ -35,7 +35,7 @@ class ParkConfig(Config):
 
     # We use a GPU with 12GB memory, which can fit two images.
     # Adjust down if you use a smaller GPU.
-    GPU_COUNT = 1
+    GPU_COUNT = 1  # HShin
     
 
     IMAGES_PER_GPU = 2
