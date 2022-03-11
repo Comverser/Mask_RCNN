@@ -117,7 +117,7 @@ if __name__ == "__main__":
     from keras.datasets import mnist
     from keras.preprocessing.image import ImageDataGenerator
 
-    GPU_COUNT = 2
+    GPU_COUNT = 8
 
     # Root directory of the project
     ROOT_DIR = os.path.abspath("../")
