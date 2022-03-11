@@ -14,6 +14,12 @@ jupyter lab
 pip install jupyterlab
 jupyter notebook password
 ```
+
+conda env
+```bash
+conda install -c conda-forge nb_conda_kernels
+```
+
 ## requirements
 hardware compatible to 
 - cudnn 7.6.4
