@@ -1,6 +1,7 @@
 # HShin
 samples/park/Dataset2d-test
 samples/park/Dataset2dSeg-test
+samples/park/*.csv
 
 # Data files and directories common in repo root
 datasets/
